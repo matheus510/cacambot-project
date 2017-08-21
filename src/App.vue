@@ -12,8 +12,8 @@
       <div class="content">
         <div class="row">
           <div class="col-md-6">
-            <h2>{{ section2.headline }}</h2>
-            <p>{{ section2.paragraph }}</p>
+            <h2 class="title">{{ section2.headline }}</h2>
+            <!--<p>{{ section2.paragraph }}</p>-->
           </div>
           <div class="col-md-6">
             <img :src="section2.image1Path"/>  
@@ -42,10 +42,10 @@ export default {
       header: 'CaçambotW200',
       subheader: 'Ao fim do dia, todos se tornam entulho...',
       section2: {
-        headline: "Vai encarar?",
-        paragraph: "lorem",
-        paragraph2: "succ ma thicc",
-        image1Path: "/src/assets/img/cacambot.jpg"
+        headline: "leonardo é um merda, acredita?",
+        paragraph: "me mata memata metamamra mem mata maemtame metmea me mete me mata. Mme mata memata metamamra mem mata maemtame metmea me mete me mata.",
+        paragraph2: "succ ma thicc dick succ ma thicc succ ma thicc succ ma thicc succ ma thicc succ ma thicc dick",
+        image1Path: "/src/assets/img/cacambot.png"
       }
     }
   }
@@ -121,5 +121,24 @@ a {
 .content {
   color: white;
   padding: 0;
+}
+.title {
+  text-align: center;
+  font-family: 'Oswald', Helvetica, sans-serif;
+  font-size: 80px;
+  transform: skewY(-10deg);
+  letter-spacing: 4px;
+  word-spacing: -8px;
+  color: #728a37;
+  text-shadow: 
+    -1px -1px 0 #aac46b,
+    -2px -2px 0 #aac46b,
+    -3px -3px 0 #aac46b,
+    -4px -4px 0 #aac46b,
+    -5px -5px 0 #aac46b,
+    -6px -6px 0 #aac46b,
+    -7px -7px 0 #aac46b,
+    -8px -8px 0 #aac46b,
+    -30px 20px 40px dimgrey
 }
 </style>
