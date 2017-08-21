@@ -10,7 +10,16 @@
     </div>
     <div class="section2">
       <div class="content">
-        <h2>{{ title }}</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <h2>{{ section2.headline }}</h2>
+            <p>{{ section2.paragraph }}</p>
+          </div>
+          <div class="col-md-6">
+            <img :src="section2.image1Path"/>  
+            <p>{{ section2.paragraph2 }}</p>
+          </div>
+        </div>
       </div>  
     </div>
     <div class="section3">
@@ -31,7 +40,13 @@ export default {
   data () {
     return {
       header: 'CaçambotW200',
-      subheader: 'Ao fim do dia, todos se tornam entulho...'
+      subheader: 'Ao fim do dia, todos se tornam entulho...',
+      section2: {
+        headline: "Vai encarar?",
+        paragraph: "lorem",
+        paragraph2: "succ ma thicc",
+        image1Path: "/src/assets/img/cacambot.jpg"
+      }
     }
   }
 }
@@ -81,18 +96,18 @@ a {
 
 .section1 {
   background: url('assets/img/s-1.png') no-repeat 50% 0%;
-  height: 50%;
+  height: 900px;
 }
 .section2 {
   background: url('assets/img/s-2.png') no-repeat 0%;
-  height: 50%;
+  height: 900px;
 }
 
 .header {
   font-size: 4em;
   position: absolute;
   top: 15%;
-  left: 10%;
+  left: 5%;
 }
 .subheader {
   font-size: 2em;
