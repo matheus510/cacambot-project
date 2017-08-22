@@ -42,7 +42,7 @@ export default {
       header: 'CaçambotW200',
       subheader: 'Ao fim do dia, todos se tornam entulho...',
       section2: {
-        headline: "leonardo é um merda, acredita?",
+        headline: "",
         paragraph: "me mata memata metamamra mem mata maemtame metmea me mete me mata. Mme mata memata metamamra mem mata maemtame metmea me mete me mata.",
         paragraph2: "succ ma thicc dick succ ma thicc succ ma thicc succ ma thicc succ ma thicc succ ma thicc dick",
         image1Path: "/src/assets/img/cacambot.png"
