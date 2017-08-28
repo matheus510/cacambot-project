@@ -13,10 +13,10 @@
         <div class="row">
           <div class="col-md-6">
             <h2 class="title">{{ section2.headline }}</h2>
-            <!--<p>{{ section2.paragraph }}</p>-->
+            <p>{{ section2.paragraph }}</p>
           </div>
           <div class="col-md-6">
-            <img :src="section2.image1Path"/>  
+            <img class="cacambot-img" :src="section2.image1Path"/>  
             <p>{{ section2.paragraph2 }}</p>
           </div>
         </div>
@@ -43,8 +43,8 @@ export default {
       subheader: 'Ao fim do dia, todos se tornam entulho...',
       section2: {
         headline: "",
-        paragraph: "me mata memata metamamra mem mata maemtame metmea me mete me mata. Mme mata memata metamamra mem mata maemtame metmea me mete me mata.",
-        paragraph2: "succ ma thicc dick succ ma thicc succ ma thicc succ ma thicc succ ma thicc succ ma thicc dick",
+        paragraph: "Uma vez desprezado hoje subjulga a tudo e todos que cruzam seu caminho.",
+        paragraph2: "Hoje ele explodiu. Prepare-se, ele está atrás de tudo e todos.",
         image1Path: "/src/assets/img/cacambot.png"
       }
     }
@@ -94,6 +94,10 @@ a {
   color: #42b983;
 }
 
+p {
+  margin-top: 0;
+}
+
 .section1 {
   background: url('assets/img/s-1.png') no-repeat 50% 0%;
   height: 900px;
@@ -101,6 +105,7 @@ a {
 .section2 {
   background: url('assets/img/s-2.png') no-repeat 0%;
   height: 900px;
+  margin-top: 0;
 }
 
 .header {
@@ -140,5 +145,9 @@ a {
     -7px -7px 0 #aac46b,
     -8px -8px 0 #aac46b,
     -30px 20px 40px dimgrey
+}
+.cacambot-img {
+  float: right;
+  width: 20%;
 }
 </style>
